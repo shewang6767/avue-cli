@@ -11,11 +11,11 @@
     <div class="top-bar__title">
       <top-menu ref="topMenu"
                 v-if="setting.menu"></top-menu>
-      <top-search class="top-bar__item"
-                  v-if="setting.search"></top-search>
+      <!-- <top-search class="top-bar__item"
+                  v-if="setting.search"></top-search> -->
     </div>
     <div class="top-bar__right">
-      <div v-if="setting.lock"
+      <!-- <div v-if="setting.lock"
            class="top-bar__item">
         <top-lock></top-lock>
       </div>
@@ -25,15 +25,15 @@
       </div>
       <div class="top-bar__item">
         <top-lang></top-lang>
-      </div>
+      </div> -->
       <div class="top-bar__item"
            v-if="setting.fullscren">
         <top-full></top-full>
       </div>
-      <div class="top-bar__item"
+      <!-- <div class="top-bar__item"
            v-if="setting.debug">
         <top-logs></top-logs>
-      </div>
+      </div> -->
       <div class="top-user">
         <img class="top-bar__img"
              :src="userInfo.avatar">

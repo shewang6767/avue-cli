@@ -3,9 +3,9 @@
  */
 export default {
   title: "Avue",
-  logo: "A",
+  logo: "用户",
   key: 'avue',//配置主键,目前用于存储
-  indexTitle: '后台快速开发模版',
+  indexTitle: '用户中心管理平台',
   tokenTime: 6000,//token过期时间
   Authorization: 'Authorization',
   //http的status默认放行不才用统一处理的,
@@ -24,8 +24,8 @@ export default {
     menu: true
   },
   fistPage: {
-    name: "首页",
-    path: "/wel/index"
+    name: "系统导航",
+    path: "/nav-page/index"
   },
   //配置菜单的属性
   menu: {

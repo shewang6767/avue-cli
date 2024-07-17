@@ -1,6 +1,16 @@
 import Layout from '@/page/index/index.vue'
 import Store from '@/store/'
 export default [{
+  path: '/nav-page',
+  redirect: '/nav-page/index',
+  component: Layout,
+  children: [{
+    path: 'index',
+    name: '系统导航',
+    component: () =>
+      import ( /* webpackChunkName: "views" */ '@/page/nav-page.vue')
+  }]
+  },{
   path: '/wel',
   component: () => Store.getters.isMacOs ? import('@/mac/index.vue') : import('@/page/index/index.vue'),
   redirect: '/wel/index',
